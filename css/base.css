@@ -1,0 +1,19 @@
+body {
+    padding: 20px;
+}
+
+#table {
+    text-align: center !important;
+}
+
+#table > thead {
+    font-weight: bold;
+}
+
+#back, #next, #today {
+    background: dodgerblue;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    width: 100%;
+}

@@ -1,0 +1,10 @@
+CACHE MANIFEST
+# Версия 0.1.1
+
+CACHE:
+schedule.js
+js/base.js
+js/jquery-2.2.0.min.js
+css/base.css
+css/bootstrap.min.css
+css/bootstrap-theme.min.css
