@@ -4,6 +4,11 @@ body {
 
 #table {
     text-align: center !important;
+    font-size: 22pt;
+}
+
+td {
+    padding-top: 15px !important;
 }
 
 #table > thead {
@@ -16,4 +21,10 @@ body {
     padding: 5px;
     font-weight: bold;
     width: 100%;
+}
+
+@media (min-width: 1000px) {
+    #table {
+        font-size: 13pt;
+    }
 }
