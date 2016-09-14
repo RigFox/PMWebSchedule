@@ -14,7 +14,7 @@ function getWeekNumber(date) {
     ts.setHours(0, 0, 0);
     ts.setDate(ts.getDate() + 4 - (ts.getDay() || 7));
 
-    yearStart = new Date(ts.getFullYear(), 0, 1);
+    yearStart = new Date(ts.getFullYear(), 8, 1);
 
     weekNumber = Math.floor((timeToDays(ts - yearStart) + 1) / 7);
 
@@ -22,7 +22,7 @@ function getWeekNumber(date) {
 }
 
 function show(date) {
-    var weekOfYear = getWeekNumber(date) + 17;
+    var weekOfYear = getWeekNumber(date);
     var dayOfWeek = date.getDay() - 1;
 
     var prepSchedule = [];
