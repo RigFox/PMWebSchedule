@@ -22,7 +22,7 @@ function getWeekNumber(date) {
 }
 
 function show(date) {
-    var weekOfYear = getWeekNumber(date);
+    var weekOfYear = getWeekNumber(date) + 52; // Адский костыль
     var dayOfWeek = date.getDay() - 1;
 
     var prepSchedule = [];
