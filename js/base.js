@@ -106,10 +106,14 @@ function show(date) {
 
 function today() {
     selectDate = new Date();
-    if (selectDate.getDay() == 0) { //Sunday
-        selectDate = new Date(selectDate.getFullYear(), selectDate.getMonth(), selectDate.getDate()+1);
+    if (selectDate.getHours() >= 16) {
+        nextDay()
+    } else {
+       if (selectDate.getDay() == 0) { //Sunday
+            selectDate = new Date(selectDate.getFullYear(), selectDate.getMonth(), selectDate.getDate()+1);
+        }
+        show(selectDate); 
     }
-    show(selectDate);
 }
 
 function backDay() {
